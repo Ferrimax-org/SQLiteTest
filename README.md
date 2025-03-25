@@ -19,7 +19,17 @@ Este proyecto implementa una herramienta de prueba de estrés para bases de dato
 ## Instalación
 
 1. Clona o descarga este repositorio
-2. No se requieren dependencias adicionales
+2. Crea un entorno virtual (opcional pero recomendado):
+   ```bash
+   # Windows
+   python -m venv venv
+   .\venv\Scripts\activate
+
+   # Linux/Mac
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
+3. No se requieren dependencias adicionales (el proyecto usa solo módulos estándar)
 
 ## Uso
 

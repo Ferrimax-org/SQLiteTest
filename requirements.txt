@@ -1,0 +1,11 @@
+# Este proyecto utiliza solo módulos estándar de Python:
+# - sqlite3
+# - time
+# - random
+# - datetime
+# - logging
+# - os
+# - hashlib
+# - argparse
+
+# No se requieren dependencias externas 
