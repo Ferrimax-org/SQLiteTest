@@ -5,6 +5,7 @@ from datetime import datetime
 import logging
 import os
 import hashlib
+import argparse
 
 class SQLiteStressTest:
     """!
@@ -13,13 +14,15 @@ class SQLiteStressTest:
              de una base de datos SQLite, manteniendo los datos entre ejecuciones.
     """
 
-    def __init__(self, base_path):
+    def __init__(self, base_path, pause_time=10):
         """!
         @brief Constructor de la clase SQLiteStressTest
         @param base_path Ruta base donde se encuentran los archivos de prueba
+        @param pause_time Tiempo de pausa entre operaciones en segundos
         """
         self.db_path = 'stress_test.db'
         self.log_path = 'sqlite_test.log'
+        self.pause_time = pause_time
         
         # Crear el archivo de log vacío si no existe
         if not os.path.exists(self.log_path):
@@ -86,6 +89,43 @@ class SQLiteStressTest:
         """
         return hashlib.md5(data.encode('utf-8')).hexdigest()
 
+    def get_database_stats(self):
+        """!
+        @brief Obtiene estadísticas detalladas de la base de datos
+        @return Diccionario con las estadísticas
+        """
+        stats = {}
+        try:
+            with sqlite3.connect(self.db_path) as conn:
+                cursor = conn.cursor()
+                
+                # Obtener número total de registros
+                cursor.execute("SELECT COUNT(*) FROM test_data")
+                stats['total_records'] = cursor.fetchone()[0]
+                
+                # Obtener fecha del primer y último registro
+                cursor.execute("SELECT MIN(timestamp), MAX(timestamp) FROM test_data")
+                first_date, last_date = cursor.fetchone()
+                stats['first_record'] = first_date
+                stats['last_record'] = last_date
+                
+                # Obtener tamaño de la base de datos
+                stats['db_size'] = os.path.getsize(self.db_path)
+                
+                # Verificar integridad
+                cursor.execute("SELECT value, checksum FROM test_data")
+                corrupted_count = 0
+                for value, stored_checksum in cursor.fetchall():
+                    if self.calculate_hash(value) != stored_checksum:
+                        corrupted_count += 1
+                stats['corrupted_records'] = corrupted_count
+                
+        except sqlite3.Error as e:
+            logging.error(f"Error al obtener estadísticas: {e}")
+            stats['error'] = str(e)
+            
+        return stats
+
     def run_stress_test(self, iterations=None):
         """!
         @brief Ejecuta la prueba de estrés
@@ -118,19 +158,31 @@ class SQLiteStressTest:
                     
                     i += 1
                     
-                    # Esperar 10 segundos antes de la siguiente escritura
-                    time.sleep(10)
+                    # Esperar el tiempo especificado antes de la siguiente escritura
+                    time.sleep(self.pause_time)
                         
                 except sqlite3.Error as e:
                     logging.error(f"Error en iteración {i}: {e}")
                     
         except KeyboardInterrupt:
             logging.info("Prueba interrumpida por el usuario")
-            with sqlite3.connect(self.db_path) as conn:
-                cursor = conn.cursor()
-                cursor.execute("SELECT COUNT(*) FROM test_data")
-                count = cursor.fetchone()[0]
-                logging.info(f"Total de registros en la base de datos al finalizar: {count}")
+            stats = self.get_database_stats()
+            
+            print("\n=== Reporte Final de la Base de Datos ===")
+            print(f"Total de registros: {stats['total_records']}")
+            print(f"Primer registro: {stats['first_record']}")
+            print(f"Último registro: {stats['last_record']}")
+            print(f"Tamaño de la base de datos: {stats['db_size'] / 1024 / 1024:.2f} MB")
+            print(f"Registros corruptos: {stats['corrupted_records']}")
+            print("=====================================")
+            
+            logging.info("=== Reporte Final ===")
+            logging.info(f"Total de registros: {stats['total_records']}")
+            logging.info(f"Primer registro: {stats['first_record']}")
+            logging.info(f"Último registro: {stats['last_record']}")
+            logging.info(f"Tamaño de la base de datos: {stats['db_size'] / 1024 / 1024:.2f} MB")
+            logging.info(f"Registros corruptos: {stats['corrupted_records']}")
+            logging.info("===================")
 
     def verify_data(self):
         """!
@@ -148,6 +200,11 @@ if __name__ == "__main__":
     """!
     @brief Punto de entrada principal del script
     """
-    test = SQLiteStressTest('.')
+    parser = argparse.ArgumentParser(description='Prueba de estrés para SQLite')
+    parser.add_argument('--pause', type=float, default=10,
+                      help='Tiempo de pausa entre operaciones en segundos (default: 10)')
+    args = parser.parse_args()
+    
+    test = SQLiteStressTest('.', pause_time=args.pause)
     test.run_stress_test()
     

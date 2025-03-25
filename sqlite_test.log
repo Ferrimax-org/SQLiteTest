@@ -12,3 +12,36 @@
 2025-03-25 15:57:17,858 - INFO - Iteración 0: Verificación completada
 2025-03-25 16:03:46,818 - INFO - Prueba interrumpida por el usuario
 2025-03-25 16:03:46,820 - INFO - Total de registros en la base de datos al finalizar: 42
+2025-03-25 18:04:47,416 - INFO - -------------------
+2025-03-25 18:04:47,416 - INFO - Nueva sesión iniciada
+2025-03-25 18:04:47,419 - INFO - Registros existentes en la base de datos: 42
+2025-03-25 18:04:47,419 - INFO - Continuando con base de datos existente
+2025-03-25 18:04:47,426 - INFO - Iteración 0: Verificación completada
+2025-03-25 18:05:08,253 - INFO - Prueba interrumpida por el usuario
+2025-03-25 18:05:08,255 - ERROR - Error al obtener estadísticas: no such function: md5
+2025-03-25 18:06:01,453 - INFO - -------------------
+2025-03-25 18:06:01,453 - INFO - Nueva sesión iniciada
+2025-03-25 18:06:01,454 - INFO - Registros existentes en la base de datos: 47
+2025-03-25 18:06:01,454 - INFO - Continuando con base de datos existente
+2025-03-25 18:06:01,463 - INFO - Iteración 0: Verificación completada
+2025-03-25 18:06:23,105 - INFO - Prueba interrumpida por el usuario
+2025-03-25 18:06:23,109 - INFO - === Reporte Final ===
+2025-03-25 18:06:23,109 - INFO - Total de registros: 52
+2025-03-25 18:06:23,109 - INFO - Primer registro: 2025-03-25T15:56:36.165574
+2025-03-25 18:06:23,109 - INFO - Último registro: 2025-03-25T18:06:21.489318
+2025-03-25 18:06:23,109 - INFO - Tamaño de la base de datos: 0.08 MB
+2025-03-25 18:06:23,109 - INFO - Registros corruptos: 0
+2025-03-25 18:06:23,109 - INFO - ===================
+2025-03-25 18:06:38,366 - INFO - -------------------
+2025-03-25 18:06:38,367 - INFO - Nueva sesión iniciada
+2025-03-25 18:06:38,367 - INFO - Registros existentes en la base de datos: 52
+2025-03-25 18:06:38,368 - INFO - Continuando con base de datos existente
+2025-03-25 18:06:38,376 - INFO - Iteración 0: Verificación completada
+2025-03-25 18:06:54,683 - INFO - Prueba interrumpida por el usuario
+2025-03-25 18:06:54,686 - INFO - === Reporte Final ===
+2025-03-25 18:06:54,686 - INFO - Total de registros: 69
+2025-03-25 18:06:54,687 - INFO - Primer registro: 2025-03-25T15:56:36.165574
+2025-03-25 18:06:54,687 - INFO - Último registro: 2025-03-25T18:06:54.510522
+2025-03-25 18:06:54,687 - INFO - Tamaño de la base de datos: 0.10 MB
+2025-03-25 18:06:54,687 - INFO - Registros corruptos: 0
+2025-03-25 18:06:54,687 - INFO - ===================
