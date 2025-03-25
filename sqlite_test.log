@@ -1,0 +1,14 @@
+2025-03-25 15:56:36,160 - INFO - -------------------
+2025-03-25 15:56:36,160 - INFO - Nueva sesión iniciada
+2025-03-25 15:56:36,164 - INFO - Registros existentes en la base de datos: 0
+2025-03-25 15:56:36,165 - INFO - Continuando con base de datos existente
+2025-03-25 15:56:36,170 - INFO - Iteración 0: Verificación completada
+2025-03-25 15:57:04,807 - INFO - Prueba interrumpida por el usuario
+2025-03-25 15:57:04,808 - INFO - Total de registros en la base de datos al finalizar: 3
+2025-03-25 15:57:17,849 - INFO - -------------------
+2025-03-25 15:57:17,849 - INFO - Nueva sesión iniciada
+2025-03-25 15:57:17,850 - INFO - Registros existentes en la base de datos: 3
+2025-03-25 15:57:17,850 - INFO - Continuando con base de datos existente
+2025-03-25 15:57:17,858 - INFO - Iteración 0: Verificación completada
+2025-03-25 16:03:46,818 - INFO - Prueba interrumpida por el usuario
+2025-03-25 16:03:46,820 - INFO - Total de registros en la base de datos al finalizar: 42
