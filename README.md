@@ -1,5 +1,6 @@
 # SQLite Stress Test
 
+
 Este proyecto implementa una herramienta de prueba de estrés para bases de datos SQLite, diseñada para probar la robustez y rendimiento de la base de datos durante operaciones continuas.
 
 ## Características
