@@ -1,11 +1,14 @@
-# Este proyecto utiliza solo módulos estándar de Python:
-# - sqlite3
-# - time
-# - random
-# - datetime
-# - logging
-# - os
-# - hashlib
-# - argparse
+# Este proyecto utiliza los siguientes módulos:
+# - Módulos estándar de Python:
+#   - sqlite3
+#   - time
+#   - random
+#   - datetime
+#   - logging
+#   - os
+#   - hashlib
+#   - argparse
+# - Dependencias externas:
+psutil>=5.9.0
 
 # No se requieren dependencias externas 

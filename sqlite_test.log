@@ -45,3 +45,121 @@
 2025-03-25 18:06:54,687 - INFO - Tamaño de la base de datos: 0.10 MB
 2025-03-25 18:06:54,687 - INFO - Registros corruptos: 0
 2025-03-25 18:06:54,687 - INFO - ===================
+2025-03-27 18:01:18,088 - INFO - -------------------
+2025-03-27 18:01:18,089 - INFO - Nueva sesión iniciada
+2025-03-27 18:01:18,089 - INFO - Iniciando mantenimiento de power on...
+2025-03-27 18:01:18,095 - INFO - Checkpoint WAL realizado correctamente
+2025-03-27 18:01:18,096 - INFO - Espacio disponible: 3864.64MB
+2025-03-27 18:01:18,103 - INFO - Evento de inicio registrado correctamente
+2025-03-27 18:01:18,104 - INFO - Mantenimiento de power on completado exitosamente
+2025-03-27 18:01:18,106 - INFO - Registros existentes en la base de datos: 69
+2025-03-27 18:01:18,106 - INFO - Continuando con base de datos existente
+2025-03-27 18:01:18,113 - INFO - Iteración 0: Verificación completada
+2025-03-27 18:01:43,796 - INFO - Prueba interrumpida por el usuario
+2025-03-27 18:01:43,800 - INFO - === Reporte Final ===
+2025-03-27 18:01:43,800 - INFO - Total de registros: 95
+2025-03-27 18:01:43,800 - INFO - Primer registro: 2025-03-25T15:56:36.165574
+2025-03-27 18:01:43,801 - INFO - Último registro: 2025-03-27T18:01:43.318119
+2025-03-27 18:01:43,801 - INFO - Tamaño de la base de datos: 0.14 MB
+2025-03-27 18:01:43,801 - INFO - Registros corruptos: 0
+2025-03-27 18:01:43,801 - INFO - ===================
+2025-03-27 18:02:38,769 - INFO - -------------------
+2025-03-27 18:02:38,769 - INFO - Nueva sesión iniciada
+2025-03-27 18:02:38,769 - INFO - Iniciando mantenimiento de power on...
+2025-03-27 18:02:38,771 - INFO - Checkpoint WAL realizado correctamente
+2025-03-27 18:02:38,771 - INFO - Espacio disponible: 3864.60MB
+2025-03-27 18:02:38,778 - INFO - Evento de inicio registrado correctamente
+2025-03-27 18:02:38,778 - INFO - Mantenimiento de power on completado exitosamente
+2025-03-27 18:02:38,780 - INFO - Registros existentes en la base de datos: 95
+2025-03-27 18:02:38,780 - INFO - Continuando con base de datos existente
+2025-03-27 18:02:38,786 - INFO - Iteración 0: Verificación completada
+2025-03-27 18:02:54,612 - INFO - Prueba interrumpida por el usuario
+2025-03-27 18:02:54,620 - INFO - === Reporte Final ===
+2025-03-27 18:02:54,620 - INFO - Total de registros: 111
+2025-03-27 18:02:54,620 - INFO - Primer registro: 2025-03-25T15:56:36.165574
+2025-03-27 18:02:54,620 - INFO - Último registro: 2025-03-27T18:02:53.903418
+2025-03-27 18:02:54,620 - INFO - Tamaño de la base de datos: 0.16 MB
+2025-03-27 18:02:54,620 - INFO - === Estado de Integridad ===
+2025-03-27 18:02:54,620 - INFO - Registros verificados: 111
+2025-03-27 18:02:54,620 - INFO - Registros corruptos: 0
+2025-03-27 18:02:54,620 - INFO - Porcentaje de integridad: 100.00%
+2025-03-27 18:02:54,620 - INFO - Integridad estructural: OK
+2025-03-27 18:02:54,620 - INFO - === Eventos del Sistema ===
+2025-03-27 18:02:54,620 - INFO - Total de eventos: 2
+2025-03-27 18:02:54,620 - INFO - Eventos de error: 0
+2025-03-27 18:02:54,620 - INFO - ===================
+2025-03-27 18:04:41,432 - INFO - -------------------
+2025-03-27 18:04:41,432 - INFO - Nueva sesión iniciada
+2025-03-27 18:04:41,432 - INFO - Iniciando mantenimiento de power on...
+2025-03-27 18:04:41,433 - INFO - Checkpoint WAL realizado correctamente
+2025-03-27 18:04:41,433 - INFO - Espacio disponible: 3864.57MB
+2025-03-27 18:04:41,441 - INFO - Evento de inicio registrado correctamente
+2025-03-27 18:04:41,441 - INFO - Mantenimiento de power on completado exitosamente
+2025-03-27 18:04:41,443 - INFO - Registros existentes en la base de datos: 111
+2025-03-27 18:04:41,443 - INFO - Continuando con base de datos existente
+2025-03-27 18:04:41,449 - INFO - Iteración 0: Verificación completada
+2025-03-27 18:05:43,752 - INFO - Prueba interrumpida por el usuario
+2025-03-27 18:05:43,758 - INFO - === Reporte Final ===
+2025-03-27 18:05:43,758 - INFO - Total de registros: 173
+2025-03-27 18:05:43,758 - INFO - Primer registro: 2025-03-25T15:56:36.165574
+2025-03-27 18:05:43,758 - INFO - Último registro: 2025-03-27T18:05:42.957621
+2025-03-27 18:05:43,759 - INFO - Tamaño de la base de datos: 0.24 MB
+2025-03-27 18:05:43,759 - INFO - === Estado de Integridad ===
+2025-03-27 18:05:43,759 - INFO - Registros verificados: 173
+2025-03-27 18:05:43,759 - INFO - Registros corruptos: 0
+2025-03-27 18:05:43,759 - INFO - Porcentaje de integridad: 100.00%
+2025-03-27 18:05:43,759 - INFO - Integridad estructural: OK
+2025-03-27 18:05:43,759 - INFO - === Eventos del Sistema ===
+2025-03-27 18:05:43,759 - INFO - Total de eventos: 3
+2025-03-27 18:05:43,759 - INFO - Eventos de error: 0
+2025-03-27 18:05:43,759 - INFO - ===================
+2025-03-27 18:06:42,944 - INFO - -------------------
+2025-03-27 18:06:42,944 - INFO - Nueva sesión iniciada
+2025-03-27 18:06:42,944 - INFO - Iniciando mantenimiento de power on...
+2025-03-27 18:06:42,946 - INFO - Checkpoint WAL realizado correctamente
+2025-03-27 18:06:42,946 - INFO - Espacio disponible: 3864.49MB
+2025-03-27 18:06:42,953 - INFO - Evento de inicio registrado correctamente
+2025-03-27 18:06:42,953 - INFO - Mantenimiento de power on completado exitosamente
+2025-03-27 18:06:42,955 - INFO - Registros existentes en la base de datos: 173
+2025-03-27 18:06:42,955 - INFO - Continuando con base de datos existente
+2025-03-27 18:06:42,961 - INFO - Iteración 0: Verificación completada
+2025-03-27 18:08:04,194 - INFO - Prueba interrumpida por el usuario
+2025-03-27 18:08:04,200 - INFO - === Reporte Final ===
+2025-03-27 18:08:04,201 - INFO - Total de registros: 182
+2025-03-27 18:08:04,201 - INFO - Primer registro: 2025-03-25T15:56:36.165574
+2025-03-27 18:08:04,201 - INFO - Último registro: 2025-03-27T18:08:03.027293
+2025-03-27 18:08:04,201 - INFO - Tamaño de la base de datos: 0.25 MB
+2025-03-27 18:08:04,201 - INFO - === Estado de Integridad ===
+2025-03-27 18:08:04,201 - INFO - Registros verificados: 182
+2025-03-27 18:08:04,201 - INFO - Registros corruptos: 0
+2025-03-27 18:08:04,201 - INFO - Porcentaje de integridad: 100.00%
+2025-03-27 18:08:04,201 - INFO - Integridad estructural: OK
+2025-03-27 18:08:04,202 - INFO - === Eventos del Sistema ===
+2025-03-27 18:08:04,202 - INFO - Total de eventos: 4
+2025-03-27 18:08:04,202 - INFO - Eventos de error: 0
+2025-03-27 18:08:04,202 - INFO - ===================
+2025-03-27 18:08:15,455 - INFO - -------------------
+2025-03-27 18:08:15,456 - INFO - Nueva sesión iniciada
+2025-03-27 18:08:15,456 - INFO - Iniciando mantenimiento de power on...
+2025-03-27 18:08:15,457 - INFO - Checkpoint WAL realizado correctamente
+2025-03-27 18:08:15,457 - INFO - Espacio disponible: 3864.48MB
+2025-03-27 18:08:15,464 - INFO - Evento de inicio registrado correctamente
+2025-03-27 18:08:15,464 - INFO - Mantenimiento de power on completado exitosamente
+2025-03-27 18:08:15,466 - INFO - Registros existentes en la base de datos: 182
+2025-03-27 18:08:15,466 - INFO - Continuando con base de datos existente
+2025-03-27 18:08:15,471 - INFO - Iteración 0: Verificación completada
+2025-03-27 18:09:16,250 - INFO - Prueba interrumpida por el usuario
+2025-03-27 18:09:16,257 - INFO - === Reporte Final ===
+2025-03-27 18:09:16,257 - INFO - Total de registros: 243
+2025-03-27 18:09:16,257 - INFO - Primer registro: 2025-03-25T15:56:36.165574
+2025-03-27 18:09:16,257 - INFO - Último registro: 2025-03-27T18:09:15.988090
+2025-03-27 18:09:16,257 - INFO - Tamaño de la base de datos: 0.33 MB
+2025-03-27 18:09:16,258 - INFO - === Estado de Integridad ===
+2025-03-27 18:09:16,258 - INFO - Registros verificados: 243
+2025-03-27 18:09:16,258 - INFO - Registros corruptos: 0
+2025-03-27 18:09:16,258 - INFO - Porcentaje de integridad: 100.00%
+2025-03-27 18:09:16,258 - INFO - Integridad estructural: OK
+2025-03-27 18:09:16,258 - INFO - === Eventos del Sistema ===
+2025-03-27 18:09:16,258 - INFO - Total de eventos: 5
+2025-03-27 18:09:16,258 - INFO - Eventos de error: 0
+2025-03-27 18:09:16,258 - INFO - ===================
